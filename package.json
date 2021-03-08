@@ -1,0 +1,27 @@
+{
+  "name": "dummy-3rd-party",
+  "version": "1.0.0",
+  "description": "DUmmy 3rd party for proof of concepts.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Arcadier/dummy-3rd-party.git"
+  },
+  "keywords": [
+    "testing"
+  ],
+  "author": "Arcadier",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Arcadier/dummy-3rd-party/issues"
+  },
+  "homepage": "https://github.com/Arcadier/dummy-3rd-party#readme",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "express": "^4.17.1",
+    "morgan": "^1.10.0"
+  }
+}
