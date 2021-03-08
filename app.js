@@ -17,3 +17,7 @@ app.post("/webhook", (req, res) => {
     res.send("Payload received");
 
 });
+
+app.listen(process.env.PORT || 3000, () => {
+    console.log("Express server listning on port ");
+});
