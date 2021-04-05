@@ -11,12 +11,12 @@ app.use(bodyparser.json());
 app.post("/webhook", (req, res) => {
 
     console.log(req.body);
-    res.send("Payload received");
+    res.send({ "message": "Payload received" });
 
 });
 
 app.get("/", (req, res) => {
-    res.send("Use a POST request with \"https://dummy-3rd-party.herokuapp.com/webhook\", send any JSON object, e.g { \"Payload\": \"Received\" } and watch the logs.")
+    res.send("Use a POST request with \"https://dummy-3rd-party.herokuapp.com/webhook\", send any JSON object, e.g { \"Payload\": \"Sent\" } and excpect the response: { \"message\": \"Payload Received\" }.")
 })
 
 app.listen(process.env.PORT || 3000, () => {
