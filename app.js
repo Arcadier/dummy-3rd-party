@@ -11,7 +11,7 @@ app.use(bodyparser.json());
 app.post("/webhook", (req, res) => {
 
     console.log(req.body);
-    res.send({ "message": "Payload received" });
+    res.send({ "ain't nothing": "but a heartache" });
 
 });
 
