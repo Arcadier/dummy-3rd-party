@@ -17,7 +17,7 @@ app.post("/webhook", (req, res) => {
 
 app.get("/", (req, res) => {
 
-    res.send("Use a POST request with \"https://dummy-3rd-party.herokuapp.com/webhook\", send any JSON object, e.g { \"Payload\": \"Received\" } and watch the logs.")
+    // res.send("Use a POST request with \"https://dummy-3rd-party.herokuapp.com/webhook\", send any JSON object, e.g { \"Payload\": \"Received\" } and watch the logs.")
     res.sendFile(path.join(__dirname+'/me.jpg'));
 
 })
